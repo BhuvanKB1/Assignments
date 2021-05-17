@@ -1,4 +1,4 @@
-Its Bhuvan
+Its Bhuvan KB
 from Mumbai
-css
-css-assignments
+jss
+jss-assignments
