@@ -1,0 +1,334 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang16393{\fonttbl{\f0\fmodern\fprq1 Lucida Console;}{\f1\fnil\fcharset0 Calibri;}}
+{\colortbl ;\red0\green191\blue0;\red191\green0\blue191;\red191\green191\blue0;\red0\green191\blue191;\red191\green0\blue0;\red64\green255\blue255;\red64\green255\blue64;}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs18\lang9\par
+\cf1 bhuvkb@LIN24004346 \cf2 MINGW64 \cf3 ~\par
+\cf0 $ mkdir project_dir\par
+\par
+\cf1 bhuvkb@LIN24004346 \cf2 MINGW64 \cf3 ~\par
+\cf0 $ cd project_dir\par
+\par
+\cf1 bhuvkb@LIN24004346 \cf2 MINGW64 \cf3 ~/project_dir\par
+\cf0 $ git init\par
+Initialized empty Git repository in C:/Users/BHUVKB/project_dir/.git/\par
+\par
+\cf1 bhuvkb@LIN24004346 \cf2 MINGW64 \cf3 ~/project_dir\cf4  (master)\par
+\cf0 $ touch index.html\par
+\par
+\cf1 bhuvkb@LIN24004346 \cf2 MINGW64 \cf3 ~/project_dir\cf4  (master)\par
+\cf0 $ git status\par
+On branch master\par
+\par
+No commits yet\par
+\par
+Untracked files:\par
+  (use "git add <file>..." to include in what will be committed)\par
+        \cf5 index.html\par
+\par
+\cf0 nothing added to commit but untracked files present (use "git add" to track)\par
+\par
+\cf1 bhuvkb@LIN24004346 \cf2 MINGW64 \cf3 ~/project_dir\cf4  (master)\par
+\cf0 $ git add index.html\par
+\par
+\cf1 bhuvkb@LIN24004346 \cf2 MINGW64 \cf3 ~/project_dir\cf4  (master)\par
+\cf0 $ git commit -m "index added"\par
+[master (root-commit) c8a0199] index added\par
+ Committer: BhuvanKB1 <bhuvankrishna.k-b@capgemini.com>\par
+Your name and email address were configured automatically based\par
+on your username and hostname. Please check that they are accurate.\par
+You can suppress this message by setting them explicitly:\par
+\par
+    git config --global user.name "Your Name"\par
+    git config --global user.email you@example.com\par
+\par
+After doing this, you may fix the identity used for this commit with:\par
+\par
+    git commit --amend --reset-author\par
+\par
+ 1 file changed, 0 insertions(+), 0 deletions(-)\par
+ create mode 100644 index.html\par
+\par
+\cf1 bhuvkb@LIN24004346 \cf2 MINGW64 \cf3 ~/project_dir\cf4  (master)\par
+\cf0 $ vim index.html\par
+\par
+\cf1 bhuvkb@LIN24004346 \cf2 MINGW64 \cf3 ~/project_dir\cf4  (master)\par
+\cf0 $ touch info.txt\par
+\par
+\cf1 bhuvkb@LIN24004346 \cf2 MINGW64 \cf3 ~/project_dir\cf4  (master)\par
+\cf0 $ git status\par
+On branch master\par
+Changes not staged for commit:\par
+  (use "git add <file>..." to update what will be committed)\par
+  (use "git restore <file>..." to discard changes in working directory)\par
+        \cf5 modified:   index.html\par
+\par
+\cf0 Untracked files:\par
+  (use "git add <file>..." to include in what will be committed)\par
+        \cf5 info.txt\par
+\par
+\cf0 no changes added to commit (use "git add" and/or "git commit -a")\par
+\par
+\cf1 bhuvkb@LIN24004346 \cf2 MINGW64 \cf3 ~/project_dir\cf4  (master)\par
+\cf0 $ vim .gitignore\par
+\par
+\cf1 bhuvkb@LIN24004346 \cf2 MINGW64 \cf3 ~/project_dir\cf4  (master)\par
+\cf0 $ git status\par
+On branch master\par
+Changes not staged for commit:\par
+  (use "git add <file>..." to update what will be committed)\par
+  (use "git restore <file>..." to discard changes in working directory)\par
+        \cf5 modified:   index.html\par
+\par
+\cf0 Untracked files:\par
+  (use "git add <file>..." to include in what will be committed)\par
+        \cf5 .gitignore\par
+\par
+\cf0 no changes added to commit (use "git add" and/or "git commit -a")\par
+\par
+\cf1 bhuvkb@LIN24004346 \cf2 MINGW64 \cf3 ~/project_dir\cf4  (master)\par
+\cf0 $ git add index.html\par
+warning: LF will be replaced by CRLF in index.html.\par
+The file will have its original line endings in your working directory\par
+\par
+\cf1 bhuvkb@LIN24004346 \cf2 MINGW64 \cf3 ~/project_dir\cf4  (master)\par
+\cf0 $ git commit index.html\par
+warning: LF will be replaced by CRLF in index.html.\par
+The file will have its original line endings in your working directory\par
+Aborting commit due to empty commit message.\par
+\par
+\cf1 bhuvkb@LIN24004346 \cf2 MINGW64 \cf3 ~/project_dir\cf4  (master)\par
+\cf0 $ git commit -m "changes to index\par
+>\par
+> "\par
+[master 9bd76f9] changes to index\par
+ Committer: BhuvanKB1 <bhuvankrishna.k-b@capgemini.com>\par
+Your name and email address were configured automatically based\par
+on your username and hostname. Please check that they are accurate.\par
+You can suppress this message by setting them explicitly:\par
+\par
+    git config --global user.name "Your Name"\par
+    git config --global user.email you@example.com\par
+\par
+After doing this, you may fix the identity used for this commit with:\par
+\par
+    git commit --amend --reset-author\par
+\par
+ 1 file changed, 1 insertion(+)\par
+\par
+\cf1 bhuvkb@LIN24004346 \cf2 MINGW64 \cf3 ~/project_dir\cf4  (master)\par
+\cf0 $ git config --global user.name BhuvanKb1\par
+\par
+\cf1 bhuvkb@LIN24004346 \cf2 MINGW64 \cf3 ~/project_dir\cf4  (master)\par
+\cf0 $ git config --global user.email Bhuvankbwork@gmail.com\par
+\par
+\cf1 bhuvkb@LIN24004346 \cf2 MINGW64 \cf3 ~/project_dir\cf4  (master)\par
+\cf0 $ git commit --amend --reset-author\par
+[master 674e4e2] changes to index 2\par
+ 1 file changed, 1 insertion(+)\par
+\par
+\cf1 bhuvkb@LIN24004346 \cf2 MINGW64 \cf3 ~/project_dir\cf4  (master)\par
+\cf0 $ git log\par
+\cf3 commit 674e4e215925813afa51ab33d50fa6be07986ccc (\cf6 HEAD -> \cf7 master\cf3 )\par
+\cf0 Author: BhuvanKb1 <Bhuvankbwork@gmail.com>\par
+Date:   Mon May 17 13:12:56 2021 +0530\par
+\par
+    changes to index 2\par
+\par
+\cf3 commit c8a01993f0126f83877909fd3d87b6dd142b05f0\par
+\cf0 Author: BhuvanKB1 <bhuvankrishna.k-b@capgemini.com>\par
+Date:   Mon May 17 13:06:09 2021 +0530\par
+\par
+    index added\par
+\par
+\cf1 bhuvkb@LIN24004346 \cf2 MINGW64 \cf3 ~/project_dir\cf4  (master)\par
+\cf0 $ vim index.html\par
+\par
+\cf1 bhuvkb@LIN24004346 \cf2 MINGW64 \cf3 ~/project_dir\cf4  (master)\par
+\cf0 $ git revert head\par
+error: Your local changes to the following files would be overwritten by merge:\par
+        index.html\par
+Please commit your changes or stash them before you merge.\par
+Aborting\par
+fatal: revert failed\par
+\par
+\cf1 bhuvkb@LIN24004346 \cf2 MINGW64 \cf3 ~/project_dir\cf4  (master)\par
+\cf0 $ git commit -a -m "changes saved"\par
+warning: LF will be replaced by CRLF in index.html.\par
+The file will have its original line endings in your working directory\par
+[master a44fceb] changes saved\par
+ 1 file changed, 1 insertion(+)\par
+\par
+\cf1 bhuvkb@LIN24004346 \cf2 MINGW64 \cf3 ~/project_dir\cf4  (master)\par
+\cf0 $ vim index.html\par
+\par
+\cf1 bhuvkb@LIN24004346 \cf2 MINGW64 \cf3 ~/project_dir\cf4  (master)\par
+\cf0 $ git revert HEAD\par
+[master cf3a6e2] Revert "changes saved again "\par
+ 1 file changed, 1 deletion(-)\par
+\par
+\cf1 bhuvkb@LIN24004346 \cf2 MINGW64 \cf3 ~/project_dir\cf4  (master)\par
+\cf0 $ vim index.html\par
+\par
+\cf1 bhuvkb@LIN24004346 \cf2 MINGW64 \cf3 ~/project_dir\cf4  (master)\par
+\cf0 $ git config --global alias.my-add add\par
+\par
+\cf1 bhuvkb@LIN24004346 \cf2 MINGW64 \cf3 ~/project_dir\cf4  (master)\par
+\cf0 $ vim index.html\par
+\par
+\cf1 bhuvkb@LIN24004346 \cf2 MINGW64 \cf3 ~/project_dir\cf4  (master)\par
+\cf0 $ git commit -a -m "saved changes"\par
+[master 54b99a8] saved changes\par
+ 1 file changed, 2 insertions(+)\par
+\par
+\cf1 bhuvkb@LIN24004346 \cf2 MINGW64 \cf3 ~/project_dir\cf4  (master)\par
+\cf0 $ vim index.html\par
+\par
+\cf1 bhuvkb@LIN24004346 \cf2 MINGW64 \cf3 ~/project_dir\cf4  (master)\par
+\cf0 $ git my-add index.html\par
+\par
+\cf1 bhuvkb@LIN24004346 \cf2 MINGW64 \cf3 ~/project_dir\cf4  (master)\par
+\cf0 $ git commit index.html\par
+[master e1ddbef] Final changes done\par
+ 1 file changed, 1 insertion(+), 2 deletions(-)\par
+\par
+\cf1 bhuvkb@LIN24004346 \cf2 MINGW64 \cf3 ~/project_dir\cf4  (master)\par
+\cf0 $ git revert HEAD\par
+[master 28d4b90] Revert "Final changes Reverted"\par
+ 1 file changed, 2 insertions(+), 1 deletion(-)\par
+\par
+\cf1 bhuvkb@LIN24004346 \cf2 MINGW64 \cf3 ~/project_dir\cf4  (master)\par
+\cf0 $ vim index.html\par
+\par
+\cf1 bhuvkb@LIN24004346 \cf2 MINGW64 \cf3 ~/project_dir\cf4  (master)\par
+\cf0 $ mkdir assignments\par
+\par
+\cf1 bhuvkb@LIN24004346 \cf2 MINGW64 \cf3 ~/project_dir\cf4  (master)\par
+\cf0 $ cd assignments\par
+\par
+\cf1 bhuvkb@LIN24004346 \cf2 MINGW64 \cf3 ~/project_dir/assignments\cf4  (master)\par
+\cf0 $ git init\par
+Initialized empty Git repository in C:/Users/BHUVKB/project_dir/assignments/.git/\par
+\par
+\cf1 bhuvkb@LIN24004346 \cf2 MINGW64 \cf3 ~/project_dir/assignments\cf4  (master)\par
+\cf0 $ touch README.txt\par
+\par
+\cf1 bhuvkb@LIN24004346 \cf2 MINGW64 \cf3 ~/project_dir/assignments\cf4  (master)\par
+\cf0 $ vim README.txt\par
+\par
+\cf1 bhuvkb@LIN24004346 \cf2 MINGW64 \cf3 ~/project_dir/assignments\cf4  (master)\par
+\cf0 $ git commit -a -m "changes saved"\par
+On branch master\par
+\par
+Initial commit\par
+\par
+Untracked files:\par
+  (use "git add <file>..." to include in what will be committed)\par
+        \cf5 README.txt\par
+\par
+\cf0 nothing added to commit but untracked files present (use "git add" to track)\par
+\par
+\cf1 bhuvkb@LIN24004346 \cf2 MINGW64 \cf3 ~/project_dir/assignments\cf4  (master)\par
+\cf0 $ git add README.txt\par
+warning: LF will be replaced by CRLF in README.txt.\par
+The file will have its original line endings in your working directory\par
+\par
+\cf1 bhuvkb@LIN24004346 \cf2 MINGW64 \cf3 ~/project_dir/assignments\cf4  (master)\par
+\cf0 $ git commit -m "File saved"\par
+[master (root-commit) 92fb9aa] File saved\par
+ 1 file changed, 1 insertion(+)\par
+ create mode 100644 README.txt\par
+\par
+\cf1 bhuvkb@LIN24004346 \cf2 MINGW64 \cf3 ~/project_dir/assignments\cf4  (master)\par
+\cf0 $ git branch html-assignments\par
+\par
+\cf1 bhuvkb@LIN24004346 \cf2 MINGW64 \cf3 ~/project_dir/assignments\cf4  (master)\par
+\cf0 $ git checkout html-assignments\par
+Switched to branch 'html-assignments'\par
+\par
+\cf1 bhuvkb@LIN24004346 \cf2 MINGW64 \cf3 ~/project_dir/assignments\cf4  (html-assignments)\par
+\cf0 $ touch assignment1.html\par
+\par
+\cf1 bhuvkb@LIN24004346 \cf2 MINGW64 \cf3 ~/project_dir/assignments\cf4  (html-assignments)\par
+\cf0 $ touch assignment2.html\par
+\par
+\cf1 bhuvkb@LIN24004346 \cf2 MINGW64 \cf3 ~/project_dir/assignments\cf4  (html-assignments)\par
+\cf0 $ git add *.html\par
+\par
+\cf1 bhuvkb@LIN24004346 \cf2 MINGW64 \cf3 ~/project_dir/assignments\cf4  (html-assignments)\par
+\cf0 $ git commit -m "files saved"\par
+[html-assignments 64269ad] files saved\par
+ 2 files changed, 0 insertions(+), 0 deletions(-)\par
+ create mode 100644 assignment1.html\par
+ create mode 100644 assignment2.html\par
+\par
+\cf1 bhuvkb@LIN24004346 \cf2 MINGW64 \cf3 ~/project_dir/assignments\cf4  (html-assignments)\par
+\cf0 $ vim assignment1.html\par
+\par
+\cf1 bhuvkb@LIN24004346 \cf2 MINGW64 \cf3 ~/project_dir/assignments\cf4  (html-assignments)\par
+\cf0 $ git commit -a -m 'changes saved'\par
+warning: LF will be replaced by CRLF in assignment1.html.\par
+The file will have its original line endings in your working directory\par
+[html-assignments 23fe33b] changes saved\par
+ 1 file changed, 1 insertion(+)\par
+\par
+\cf1 bhuvkb@LIN24004346 \cf2 MINGW64 \cf3 ~/project_dir/assignments\cf4  (html-assignments)\par
+\cf0 $ git checkout master\par
+Switched to branch 'master'\par
+\par
+\cf1 bhuvkb@LIN24004346 \cf2 MINGW64 \cf3 ~/project_dir/assignments\cf4  (master)\par
+\cf0 $ vim README.txt\par
+\par
+\cf1 bhuvkb@LIN24004346 \cf2 MINGW64 \cf3 ~/project_dir/assignments\cf4  (master)\par
+\cf0 $ git checkout html-assignments\par
+Switched to branch 'html-assignments'\par
+M       README.txt\par
+\par
+\cf1 bhuvkb@LIN24004346 \cf2 MINGW64 \cf3 ~/project_dir/assignments\cf4  (html-assignments)\par
+\cf0 $ git checkout html-assignments\par
+Already on 'html-assignments'\par
+M       README.txt\par
+\par
+\cf1 bhuvkb@LIN24004346 \cf2 MINGW64 \cf3 ~/project_dir/assignments\cf4  (html-assignments)\par
+\cf0 $ git commit -a -m "changes saved"\par
+warning: LF will be replaced by CRLF in README.txt.\par
+The file will have its original line endings in your working directory\par
+[html-assignments 38fa542] changes saved\par
+ 1 file changed, 1 insertion(+)\par
+\par
+\cf1 bhuvkb@LIN24004346 \cf2 MINGW64 \cf3 ~/project_dir/assignments\cf4  (html-assignments)\par
+\cf0 $ git checkout master\par
+Switched to branch 'master'\par
+\par
+\cf1 bhuvkb@LIN24004346 \cf2 MINGW64 \cf3 ~/project_dir/assignments\cf4  (master)\par
+\cf0 $ git status\par
+On branch master\par
+nothing to commit, working tree clean\par
+\par
+\cf1 bhuvkb@LIN24004346 \cf2 MINGW64 \cf3 ~/project_dir/assignments\cf4  (master)\par
+\cf0 $ git merge master\par
+Already up to date.\par
+\par
+\cf1 bhuvkb@LIN24004346 \cf2 MINGW64 \cf3 ~/project_dir/assignments\cf4  (master)\par
+\cf0 $ git checkout master\par
+Already on 'master'\par
+\par
+\cf1 bhuvkb@LIN24004346 \cf2 MINGW64 \cf3 ~/project_dir/assignments\cf4  (master)\par
+\cf0 $ git merge html-assignments\par
+Updating 92fb9aa..38fa542\par
+Fast-forward\par
+ README.txt       | 1 \cf1 +\par
+\cf0  assignment1.html | 1 \cf1 +\par
+\cf0  assignment2.html | 0\par
+ 3 files changed, 2 insertions(+)\par
+ create mode 100644 assignment1.html\par
+ create mode 100644 assignment2.html\par
+\par
+\cf1 bhuvkb@LIN24004346 \cf2 MINGW64 \cf3 ~/project_dir/assignments\cf4  (master)\par
+\cf0 $ git branch -d html-assignments\par
+Deleted branch html-assignments (was 38fa542).\par
+\par
+\cf1 bhuvkb@LIN24004346 \cf2 MINGW64 \cf3 ~/project_dir/assignments\cf4  (master)\par
+\cf0 $\par
+\f1\fs22\par
+}
+ 
