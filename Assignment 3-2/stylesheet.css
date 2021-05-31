@@ -1,0 +1,162 @@
+body {
+    background:darkslategray;
+    font-family: 'Anaheim';
+    font-size: 1.2em;
+  }
+  
+  #outside {
+    background-color:gray;
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+  
+  h1 {
+    font-size: 1.5em;
+    text-align: center;
+    text-transform: capitalize;
+  }
+  
+  form {
+    margin: 0 auto;
+    width: 70%;
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+    
+  }
+  #survey-form {
+    background: rgb(148, 156, 148);
+  }
+  
+  fieldset { 
+    border:1px solid lightgray;
+    margin: 10px;
+   }
+  
+  legend {
+    font-weight: 700;
+  }
+  
+  #number {
+    width: 150px;
+  }
+  
+  
+  div + div {
+    margin-top: 1em;
+    }
+  
+ 
+  
+  input, textarea {
+   
+    width: 200px;
+  
+    border: 1px solid #999;
+  }
+  
+  input:focus, textarea:focus {
+    border-color: OrangeRed;
+  }
+  
+  textarea {
+    vertical-align: top;
+    height: 5em;
+  
+    resize: vertical;
+  }
+  
+  .button {
+    padding-left: 90px;
+  }
+  
+  button {
+    margin: .5em;
+    font-size: 1em;
+    text-transform: capitalize;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 2px;
+    
+  }
+  
+  #submitbutton {
+    display: flex; 
+    justify-content: center;
+  }
+
+  #name-label:hover{
+    text-decoration: underline;
+    font-size: 25px;
+    color: green;
+
+  }
+  
+  #address-label:hover{
+    text-decoration: underline;
+    font-size: 25px;
+    color: green;
+
+  }
+
+  #email-label:hover{
+    text-decoration: underline;
+    font-size: 25px;
+    color: green;
+
+  }
+
+  #number-label:hover{
+    text-decoration: underline;
+    font-size: 25px;
+    color: green;
+
+  }
+
+  #age-label:hover{
+    text-decoration: underline;
+    font-size: 25px;
+    color: green;
+
+  }
+
+  #title:hover{
+    transform: translateX(-340px);
+    transition: 3s;
+    font-style: italic;
+    color:white;
+  }
+
+  
+
+  #description:hover{
+    text-decoration: underline;
+    color: red;
+  }
+
+  #outside {
+    background-image: url('image.jpg');
+  }
+
+  footer {
+    background-color: #070707;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+    color: #fafaf8;
+    padding-top: 30px;
+  }
+
+  #last
+  {
+    position: fixed;
+    text-align: center;
+    font-size: 15px;
+    bottom: 0;
+    width: 100%;
+}
+  
