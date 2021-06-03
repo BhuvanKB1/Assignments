@@ -1,0 +1,218 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang16393{\fonttbl{\f0\fnil\fcharset0 Calibri;}}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs22\lang9 1)class Rectangle \{\par
+            constructor(width, height) \{\par
+                this.width = width;\par
+                this.height = height;\par
+            \}\par
+        \}\par
+        let obj = new Rectangle(5, 10);\par
+        console.log("Width: " + obj.width + ", Height:" + obj.height);\par
+\par
+2)class Rectangle \{\par
+            constructor(width, height) \{\par
+                this.width = width;\par
+                this.height = height;\par
+            \}\par
+            getArea() \{\par
+                return this.height * this.width;\par
+            \}\par
+        \}\par
+        let obj = new Rectangle(5, 10);\par
+        console.log("Width: " + obj.width + ", Height:" + obj.height);\par
+        console.log("Area: " + obj.getArea());\par
+\par
+3)class Rectangle \{\par
+            constructor(width, height) \{\par
+                this.width = width;\par
+                this.height = height;\par
+                this.getArea = function () \{\par
+                    return this.height * this.width;\par
+                \}\par
+            \}\par
+        \}\par
+        let r = new Rectangle(4, 5);\par
+        r.height = 50;\par
+        console.log("Area: " + r.getArea());\par
+\par
+4)var a = \{\par
+            firstName: "Bhuvan",\par
+            lastName: "KB"\par
+        \};\par
+\par
+        class Person \{\par
+            constructor(firstName, lastName) \{\par
+                this.firstName = firstName;\par
+                this.lastName = lastName;\par
+            \}\par
+        \}\par
+\par
+        console.log(a.firstName + " " + a.lastName);\par
+\par
+5)var a = \{\par
+            firstName: "Bhuvan",\par
+            lastName: "KB"\par
+        \};\par
+\par
+        class Person \{\par
+            constructor(firstName, lastName) \{\par
+                this.firstName = firstName;\par
+                this.lastName = lastName;\par
+            \}\par
+        \}\par
+        console.log(a.middleName);\par
+        a.middleName = "K";\par
+        console.log(a.middleName);\par
+\par
+6)class Person \{\par
+            constructor(firstName, lastName) \{\par
+                this.firstName = firstName;\par
+                this.lastName = lastName;\par
+                this.fullName = function () \{\par
+                    return this.firstName + " " + this.lastName;\par
+                \}\par
+            \}\par
+        \}\par
+        var a = new Person("Bhuvan", "KB");\par
+\par
+        console.log(eval(a.fullName() === "Bhuvan KB"));\par
+\par
+7)class Person \{\par
+            constructor(firstName, lastName) \{\par
+                this.firstName = firstName;\par
+                this.lastName = lastName;\par
+                this.fullName = function () \{\par
+                    return this.firstName + " " + this.lastName;\par
+                \}\par
+            \}\par
+        \}\par
+\par
+        const jsonData = '\{"firstName":"Bhuvan", "lastName":"KB"\}';\par
+        const x = JSON.parse(jsonData);\par
+\par
+        var a = new Person("Bhuvan", "KB");\par
+        console.log(eval(a.fullName() === (x.firstName + " " + x.lastName)));\par
+\par
+8)function person(fname, lname, age, skills, dateofbirth, address, married, profession) \{\par
+            this.fname = fname;\par
+            this.lname = lname;\par
+            this.age = age;\par
+            this.skills = skills;\par
+            this.dateofbirth = dateofbirth;\par
+            this.address = address;\par
+            this.married = married;\par
+            this.profession = profession;\par
+        \}\par
+\par
+        person1 = new person("nikhil", "goud", 22, ["c"], "24/10/1996", \{ city: "hyderabad", pincode: "521185" \}, "false", "sr analyst");\par
+        person2 = new person("harish", "chinna", 21, "HTML", "08/06/1997", \{ city: "ameerpet", pincode: "500038" \}, "false", "jr analyst");\par
+\par
+        print = function () \{\par
+            console.log(person1);\par
+            console.log(person2);\par
+        \}();\par
+\par
+9)function person(fname, lname, age, skills, dateofbirth, address, married, profession) \{\par
+            this.fname = fname;\par
+            this.lname = lname;\par
+            this.age = age;\par
+            this.skills = skills;\par
+            this.dateofbirth = dateofbirth;\par
+            this.address = address;\par
+            this.married = married;\par
+            this.profession = profession;\par
+        \}\par
+\par
+        amitabh = new person("amitabh", "bachan", 22, ["c"], "24/10/1996", \{ city: "hyderabad", pincode: "521185" \}, "false", "sr analyst");\par
+        abhisheik = new person("abhisheik", 21, "HTML", "08/06/1997", "false", "jr analyst");\par
+        var abhisheik = Object.create(amitabh);\par
+\par
+        print = function () \{\par
+            console.log(amitabh);\par
+            console.log(abhisheik.lname);\par
+            console.log(abhisheik.address);\par
+        \}();\par
+\par
+10)function person(fname, lname, age, skills, dateofbirth, address, married, profession) \{\par
+            this.fname = fname;\par
+            this.lname = lname;\par
+            this.age = age;\par
+            this.skills = skills;\par
+            this.dateofbirth = dateofbirth;\par
+            this.address = address;\par
+            this.married = married;\par
+            this.profession = profession;\par
+        \}\par
+\par
+        amitabh = new person("amitabh", "bachan", 22, ["c"], "24/10/1996", \{ city: "hyderabad", pincode: "521185" \}, "false", "sr analyst");\par
+        abhisheik = new person("abhisheik", 21, "HTML", "08/06/1997", "false", "jr analyst");\par
+\par
+        var abhisheik = Object.create(amitabh);\par
+\par
+\par
+       11)aaradhya = new person("Aaradhya");\par
+       var aaradhya = Object.assign(amitabh, abhisheik);\par
+\par
+        print = function () \{\par
+            console.log(amitabh);\par
+            console.log(abhisheik.lname);\par
+            console.log(abhisheik.address);\par
+            console.log(aaradhya.dateofbirth);\par
+        \}();\par
+\par
+12)class BankAccount \{\par
+            constructor(accountNumber, accountHolderName, accountBalance) \{\par
+                this.accountNumber = accountNumber;\par
+                this.accountHolderName = accountHolderName;\par
+                this.accountBalance = accountBalance;\par
+            \}\par
+        \}\par
+\par
+        class Savings extends BankAccount \{\par
+            constructor(accountNumber, accountHolderName, accountBalance, isSalary) \{\par
+                super(accountNumber, accountHolderName, accountBalance);\par
+                this.isSalary = isSalary;\par
+            \}\par
+            withdraw(amount) \{\par
+                if (this.isSalary) \{\par
+                    return "Account balance cannot be 0";\par
+                \}\par
+                else if (amount >= this.isSalary && amount <= this.accountBalance) \{\par
+                    this.accountBalance = this.accountBalance - amount;\par
+                    return "Updated account balance is " + this.accountBalance;\par
+                \}\par
+                else \{\par
+                    return "Insufficient balance"; \par
+                \}\par
+            \}\par
+        \}\par
+\par
+        class Current extends BankAccount \{\par
+            constructor(accountNumber, accountHolderName, accountBalance, odLimit) \{\par
+                super(accountNumber, accountHolderName, accountBalance);\par
+                this.odLimit = odLimit;\par
+            \}\par
+            withdraw(amount) \{\par
+                if (amount < this.odLimit && amount <= this.accountBalance) \{\par
+                    this.accountBalance = this.accountBalance - amount;\par
+                    return "Updated account balance is " + this.accountBalance;\par
+                \}\par
+                else \{\par
+                    return "Insufficient balance";\par
+                \}\par
+            \}\par
+\par
+        \}\par
+\par
+        var saving = new Savings("10000000", "Bhuvan", 10000, 0);\par
+        console.log(saving.withdraw(1000)); \par
+        console.log(saving.withdraw(0)); \par
+        console.log(saving.withdraw(20000)); \par
+\par
+        var current = new Current("20000000", "abcde", 20000, 5000);\par
+        console.log(current.withdraw(2000));\par
+        console.log(current.withdraw(30000));\par
+\par
+\tab\par
+}
+ 
