@@ -1,4 +1,3 @@
-const error = require('events');
 const express = require('express');
 const app = express();
 const fs = require('fs');
